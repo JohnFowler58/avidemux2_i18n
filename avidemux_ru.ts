@@ -48,7 +48,7 @@
         <source>You cannot mix different video dimensions yet. Using the partial video filter later, will not work around this problem. The workaround is:
 1.) &quot;resize&quot; / &quot;add border&quot; / &quot;crop&quot; each stream to the same resolution
 2.) concatenate them together</source>
-        <translation>Видеопотоки различного разрешения не объединяются. Использование частичного фильтра видео не исправит эту проблему. Выход следующий:
+        <translation>Видеопотоки различного разрешения не объединяются. Использование частичного фильтра видео не исправит эту проблему. Обходной путь следующий:
 1) «изменить размер» / «добавить рамки» / «обрезать» потоки, приведя их к единому разрешению
 2) склеить их вместе</translation>
     </message>
@@ -598,7 +598,7 @@ Drop timing informations ?</source>
     <message>
         <location line="+22"/>
         <source>HDR tone mapping</source>
-        <translation>Тональная компрессия HDR</translation>
+        <translation>Тональное отображение HDR</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1157,17 +1157,17 @@ Drop timing informations ?</source>
     <message>
         <location line="+2"/>
         <source>Ignore driver blacklist (Intel)</source>
-        <translation>Игнорировать чёрный список (Intel)</translation>
+        <translation>Игнорировать чёрный список драйверов (Intel)</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Ignore codec blacklist (Intel, HEVC 10bit)</source>
-        <translation>Игнорировать чёрный список (Intel, HEVC 10bit)</translation>
+        <translation>Игнорировать чёрный список кодеков (Intel, HEVC 10bit)</translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Enabling Hw decoding disables multi-threading, restart application to apply changes</source>
-        <translation>Включение аппаратного ускорения отключает многопоточность, изменения требуют перезапуска приложения</translation>
+        <translation>Включение аппаратного декодирования отключает многопоточность, изменения требуют перезапуска приложения</translation>
     </message>
     <message>
         <location line="-422"/>
@@ -1197,7 +1197,7 @@ Drop timing informations ?</source>
     <message>
         <location line="+3"/>
         <source>_Swap markers if marker A is set past marker B or marker B before A in video</source>
-        <translation>_Менять при необходимости местами значения меток выборки вместо сброса ранее поставленной метки</translation>
+        <translation>_Менять метки A и B местами, если A позже B, вместо сброса ранее установленной метки</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -1496,7 +1496,7 @@ Drop timing informations ?</source>
     <message>
         <location line="+1"/>
         <source>_Message level:</source>
-        <translation>_Уровень сообщений:</translation>
+        <translation>_Подробность сообщений:</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -1511,7 +1511,7 @@ Drop timing informations ?</source>
     <message>
         <location line="+4"/>
         <source>No downmixing</source>
-        <translation>Без даунмикса</translation>
+        <translation>Без понижающего микширования</translation>
     </message>
     <message>
         <location filename="../ADM_commonUI/DIA_audioFilter.cpp" line="+103"/>
@@ -1522,7 +1522,7 @@ Drop timing informations ?</source>
     <message>
         <location filename="../ADM_commonUI/DIA_prefs.cpp" line="+5"/>
         <source>_Local playback downmixing:</source>
-        <translation>_Даунмикс при локальном воспроизведении:</translation>
+        <translation>_Понижающее микширование при локальном воспроизведении:</translation>
     </message>
     <message>
         <source>The options above are effective only for MPEG and DivX with software decoding</source>
@@ -2966,7 +2966,7 @@ Is it running ?</source>
     <message>
         <location line="+1"/>
         <source>HDR tone mapping</source>
-        <translation>Тональная компрессия HDR</translation>
+        <translation>Тональное отображение HDR</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -4181,7 +4181,7 @@ Installation mismatch</source>
     <message>
         <location line="+1"/>
         <source>All in one ivtc.</source>
-        <translation>Всё в одном обратном телесине.</translation>
+        <translation>Всё в одном обратном преобразовании телесина.</translation>
     </message>
 </context>
 <context>
@@ -5140,7 +5140,7 @@ Installation mismatch</source>
     <message>
         <location line="+1"/>
         <source>Hardcode ASS/SSA/SRT subtitles using libass.</source>
-        <translation>Встроить субтитры ASS/SSA/SRT с использованием libass.</translation>
+        <translation>Наложить субтитры ASS/SSA/SRT с использованием libass.</translation>
     </message>
     <message>
         <location line="+91"/>
@@ -5460,7 +5460,7 @@ This message will not be displayed again.</source>
     <message>
         <location filename="../../../avidemux_plugins/ADM_videoFilters6/blackenBorder/qt5/blackenBorders.ui" line="-30"/>
         <source>&amp;Hide Rubber Band</source>
-        <translation>&amp;Спрятать резиновые линии</translation>
+        <translation>&amp;Скрыть рамку выделения</translation>
     </message>
 </context>
 <context>
@@ -5551,7 +5551,7 @@ This message will not be displayed again.</source>
     <message>
         <location line="+7"/>
         <source>&amp;Hide Rubber Band</source>
-        <translation>&amp;Спрятать резиновые линии</translation>
+        <translation>&amp;Скрыть рамку выделения</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -5561,12 +5561,12 @@ This message will not be displayed again.</source>
     <message>
         <location line="+5"/>
         <source>Near Gaussian</source>
-        <translation>По Гауссу</translation>
+        <translation>Близкое к гауссову</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>Gaussian 2 pass</source>
-        <translation>2 прохода по Гауссу</translation>
+        <translation>Двухпроходное гауссово</translation>
     </message>
 </context>
 <context>
@@ -6041,7 +6041,7 @@ Do you want to load it  ?
     <message>
         <location line="-244"/>
         <source>Auto Crop</source>
-        <translation>Автоматика</translation>
+        <translation>Автокадрирование</translation>
     </message>
 </context>
 <context>
@@ -6094,7 +6094,7 @@ Do you want to load it  ?
     <message>
         <location line="-107"/>
         <source>&amp;Hide Rubber Band</source>
-        <translation>&amp;Спрятать резиновые линии</translation>
+        <translation>&amp;Скрыть рамку выделения</translation>
     </message>
     <message>
         <source>Keep aspect ratio</source>
@@ -6104,7 +6104,7 @@ Do you want to load it  ?
         <location line="+46"/>
         <location line="+4"/>
         <source>Do not lock</source>
-        <translation>Свободное</translation>
+        <translation>Не блокировать</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -6149,7 +6149,7 @@ Do you want to load it  ?
     <message>
         <location line="-130"/>
         <source>Lock Aspect Ratio:</source>
-        <translation>Фиксировать соотношение сторон:</translation>
+        <translation>Заблокировать соотношение сторон:</translation>
     </message>
 </context>
 <context>
@@ -7571,57 +7571,57 @@ Start and/or end time would be out of range</source>
     <message>
         <location filename="../../../avidemux_plugins/ADM_videoEncoder/ffVaAV1/ADM_ffVAEncAV1.cpp" line="+312"/>
         <source>Constant Rate Factor</source>
-        <translation type="unfinished"></translation>
+        <translation>Постоянный фактор битрейта (CRF)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Constant Bitrate</source>
-        <translation type="unfinished"></translation>
+        <translation>Постоянный битрейт</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Variable Bitrate</source>
-        <translation type="unfinished"></translation>
+        <translation>Переменный битрейт</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>Rate Control:</source>
-        <translation type="unfinished"></translation>
+        <translation>Управление битрейтом:</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Quality:</source>
-        <translation type="unfinished"></translation>
+        <translation>Качество:</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Bitrate (kbps):</source>
-        <translation type="unfinished"></translation>
+        <translation>Битрейт (кбит/с):</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Max Bitrate (kbps):</source>
-        <translation type="unfinished"></translation>
+        <translation>Макс. битрейт (кбит/с):</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>GOP Size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Размер группы кадров:</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Rate Control</source>
-        <translation type="unfinished"></translation>
+        <translation>Управление битрейтом</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Frame Control</source>
-        <translation type="unfinished"></translation>
+        <translation>Управление кадрами</translation>
     </message>
     <message>
         <location line="+21"/>
         <source>FFmpeg VA-API AV1 Encoder Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки кодировщика FFmpeg VA-API AV1</translation>
     </message>
 </context>
 <context>
@@ -7689,7 +7689,7 @@ Start and/or end time would be out of range</source>
     <message>
         <location line="-9"/>
         <source>Max Bitrate (kbps):</source>
-        <translation>Максимальный битрейт (кбит/с):</translation>
+        <translation>Макс. битрейт (кбит/с):</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -8443,7 +8443,7 @@ Start and/or end time would be out of range</source>
     <message>
         <location line="+1"/>
         <source>Max Bitrate (kbps):</source>
-        <translation>Максимальный битрейт (кбит/с):</translation>
+        <translation>Макс. битрейт (кбит/с):</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -8830,7 +8830,7 @@ Start and/or end time would be out of range</source>
     <message>
         <location line="+1"/>
         <source>Max Bitrate (kbps):</source>
-        <translation>Максимальный битрейт (кбит/с):</translation>
+        <translation>Макс. битрейт (кбит/с):</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -9138,7 +9138,7 @@ Do you want to replace it?</source>
     <message>
         <location filename="../../../avidemux_plugins/ADM_videoFilters6/flat360/ADM_vidFlat360.cpp" line="+51"/>
         <source>Flatten 360</source>
-        <translation>Плоское видео 360°</translation>
+        <translation>Развёртка 360°</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -9151,7 +9151,7 @@ Do you want to replace it?</source>
     <message>
         <location filename="../../../avidemux_plugins/ADM_videoFilters6/flat360/qt4/flat360.ui" line="+14"/>
         <source>Flatten 360</source>
-        <translation>Плоское видео 360°</translation>
+        <translation>Развёртка 360°</translation>
     </message>
     <message>
         <location line="+30"/>
@@ -12359,7 +12359,7 @@ The current editing has been saved and will be reloaded at next start</source>
     <message>
         <location line="+243"/>
         <source>Restore previous session</source>
-        <translation>Восстановить прошлую сессию</translation>
+        <translation>Восстановить прошлый сеанс</translation>
     </message>
 </context>
 <context>
@@ -13190,17 +13190,17 @@ Ready.
     <message>
         <location line="+1"/>
         <source>Save frames to separate files</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить кадры в отдельные файлы</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Maximum number of digits</source>
-        <translation type="unfinished"></translation>
+        <translation>Максимальное количество цифр</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Override filename extension</source>
-        <translation type="unfinished"></translation>
+        <translation>Переопределить расширение имени файла</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -15654,7 +15654,7 @@ If it is a system profile it will be recreated next time.</source>
     <message>
         <location line="+114"/>
         <source>Advanced 1</source>
-        <translation>Дополнительно 1</translation>
+        <translation>Доп. 1</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -15724,7 +15724,7 @@ If it is a system profile it will be recreated next time.</source>
     <message>
         <location line="+42"/>
         <source>Advanced 2</source>
-        <translation>Дополнительно 2</translation>
+        <translation>Доп. 2</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -16927,7 +16927,7 @@ If it is a system profile it will be recreated next time.</source>
     <message>
         <location line="+26"/>
         <source>Advanced 1</source>
-        <translation>Дополнительно 1</translation>
+        <translation>Доп. 1</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -16997,7 +16997,7 @@ If it is a system profile it will be recreated next time.</source>
     <message>
         <location line="+42"/>
         <source>Advanced 2</source>
-        <translation>Дополнительно 2</translation>
+        <translation>Доп. 2</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -17680,12 +17680,12 @@ If it is a system profile it will be recreated next time.</source>
     <message>
         <location line="+63"/>
         <source>Lock Aspect Ratio:</source>
-        <translation>Фиксировать соотношение сторон:</translation>
+        <translation>Заблокировать соотношение сторон:</translation>
     </message>
     <message>
         <location line="+31"/>
         <source>&amp;Hide Rubber Band</source>
-        <translation>&amp;Спрятать резиновые линии</translation>
+        <translation>&amp;Скрыть рамку выделения</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -17696,7 +17696,7 @@ If it is a system profile it will be recreated next time.</source>
         <location line="+16"/>
         <location line="+4"/>
         <source>Do not lock</source>
-        <translation>Свободное</translation>
+        <translation>Не блокировать</translation>
     </message>
     <message>
         <location line="+5"/>
